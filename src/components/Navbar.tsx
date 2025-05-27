@@ -13,7 +13,6 @@ const Header = () => {
     { label: 'SHOWROOM', to: '/showroom' },
     { label: 'BRANDS', to: '/brands' },
     { label: 'ABOUT US', to: '/about' },
-    { label: 'CONTACT US', to: '/contact' }
   ];
   
   // CSS styles
