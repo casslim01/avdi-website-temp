@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  base: "/avdi-website-temp",
+  base: "/avdi-website-temp/",
 })
