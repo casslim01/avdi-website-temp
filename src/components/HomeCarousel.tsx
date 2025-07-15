@@ -68,7 +68,7 @@ function HomeCarousel({ images = [] }: CarouselProps) {
 
   return (
     <div style={containerStyle}>
-      <Carousel interval={4500} fade className="w-100">
+      <Carousel interval={8000} fade className="w-100" pause="hover">
         {carouselImages.map((image, index) => (
           <Carousel.Item key={index}>
             <img
