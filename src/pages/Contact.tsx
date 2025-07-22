@@ -1,4 +1,3 @@
-import React, {useRef} from 'react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { ContactUs as ContactForm } from '../components/ContactForm';
