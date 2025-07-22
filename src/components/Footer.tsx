@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { Facebook, Instagram, Phone, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Footer: React.FC = () => {
-  const quickLinks = ['HOME', 'PROJECTS', 'SHOWROOM', 'BRANDS', 'ABOUT US', 'CONTACT US'];
   const currentYear = new Date().getFullYear();
-  const [showLinks, setShowLinks] = useState(false);
   const [showContact, setShowContact] = useState(false);
   const [showSocial, setShowSocial] = useState(false);
   
@@ -16,21 +14,15 @@ const Footer: React.FC = () => {
           <div className="border-b lg:border-b-0 border-gray-700 py-4 lg:pb-0">
             <div 
               className="flex justify-between items-center cursor-pointer lg:cursor-auto"
-              onClick={() => setShowLinks(!showLinks)}
             >
-              <h3 className="text-xl font-bold mb-2 lg:mb-4 h-10 flex items-center">Quick Links</h3>
+              <h3 className="text-xl font-bold mb-2 lg:mb-4 h-10 flex items-center">Office</h3>
               <div className="lg:hidden">
-                {showLinks ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
               </div>
             </div>
-            <ul className={`space-y-2 ${showLinks ? 'block' : 'hidden'} lg:block`}>
-              {quickLinks.map((link) => (
-                <li key={link}>
-                  <a href={`#${link.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-gray-300 transition-colors text-sm sm:text-base">
-                    {link}
-                  </a>
-                </li>
-              ))}
+            <ul className="list-none m-0 p-0">
+              <li>No. 26 General Tirona St.,</li>
+              <li>Caloocan City 1400,</li>
+              <li>Metro Manila Philippines</li>
             </ul>
           </div>
           
@@ -40,7 +32,7 @@ const Footer: React.FC = () => {
               className="flex justify-between items-center cursor-pointer lg:cursor-auto"
               onClick={() => setShowContact(!showContact)}
             >
-              <h3 className="text-xl font-bold mb-2 lg:mb-4 h-10 flex items-center">Contact Us</h3>
+              <h3 className="text-xl font-bold mb-2 lg:mb-4 h-10 flex items-center">Contact No.</h3>
               <div className="lg:hidden">
                 {showContact ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
               </div>

@@ -41,7 +41,7 @@ const VideoSection = () => {
             />
             {/* zIndex set for layers */}
             <div style={{...foregroundText, zIndex: 2}}> 
-                <h1>Experience Home Entertainment Like No Other</h1>
+                <h1>Experience Home Like Never Before</h1>
                 <p>Customizable According to Your Liking</p>
             </div>
         </div>

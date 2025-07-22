@@ -57,13 +57,22 @@ function HomeCarousel({ images = [] }: CarouselProps) {
     alignItems: 'center',
 };
 
-
   const imageStyle: React.CSSProperties = {
     display: 'block',
     width: 'auto',
     height: '100%',
     maxHeight: '600px',
     objectFit: 'cover',
+  };
+
+  const overlayStyle: React.CSSProperties = {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: '100%',
+    background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0) 100%)',
+    pointerEvents: 'none',
   };
 
   return (
@@ -77,6 +86,7 @@ function HomeCarousel({ images = [] }: CarouselProps) {
               alt={image.alt}
               style={imageStyle}
             />
+            <div style={overlayStyle}></div>
             <Carousel.Caption>
               <h3>{image.title}</h3>
               <p>{image.description}</p>

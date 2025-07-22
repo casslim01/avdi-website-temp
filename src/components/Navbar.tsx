@@ -11,8 +11,8 @@ const Header = () => {
     { label: 'HOME', to: '/' },
     { label: 'PROJECTS', to: '/projects' },
     { label: 'SHOWROOM', to: '/showroom' },
-    { label: 'BRANDS', to: '/brands' },
-    { label: 'ABOUT US', to: '/about' },
+    { label: 'NEWS', to: '/news' },
+    { label: 'CONTACT', to: '/contact' },
   ];
   
   // CSS styles
